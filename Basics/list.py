@@ -68,3 +68,71 @@
 # items = [1,2,3,4,5]
 # print(reverse_in_place(items))
 
+
+
+# Problem 3: Remove Duplicates While Preserving Order
+# Task: Write a function that removes duplicate values from a list while keeping the original order of elements intact.
+# Example Input: [1, 2, 2, 3, 4, 3, 5]
+# Example Output: [1, 2, 3, 4, 5]
+
+
+# def remove_duplicate(lst):
+
+#     seen = set()
+#     result = []
+#     for item in lst:
+#         if item not in seen:
+#             seen.add(item)
+#             result.append(item)
+
+#     return result
+    
+
+#     # return list(set(lst))
+
+
+# lst = [1,2,2,3,4,3,5]
+# print(remove_duplicate(lst))
+
+
+# Problem 4: Filter Even Numbers (List Comprehension)
+# Task: Given a list of integers, return a new list containing only the even numbers, using a list comprehension.
+# Example Input: [1, 2, 3, 4, 5, 6, 7, 8]
+# Example Output: [2, 4, 6, 8]
+
+# def get_integer(lst):
+
+#     # result = []
+
+#     # for item in lst:
+
+#     #     if item % 2 == 0:
+#     #         result.append(item)
+
+#     # return result
+
+#     # alternate
+#     return [x for x in lst if x % 2 == 0]
+
+# lst = [1, 2, 3, 4, 5, 6, 7, 8]
+# print(get_integer(lst))
+
+
+# Problem 5: Flatten a 2D Matrix
+# Task: Write a function that takes a nested list (a matrix of rows and columns) and flattens it into a single 1D list.
+# Example Input: [[1, 2], [3, 4], [5, 6]]
+# Example Output: [1, 2, 3, 4, 5, 6]
+
+# def flatten_matrix(grid):
+
+#     flatten = []
+
+#     for row in grid:
+#         for item in row:
+#             flatten.append(item)
+
+#     return flatten
+
+
+# grid = [[1, 2], [3, 4], [5, 6]]
+# print(flatten_matrix(grid))
